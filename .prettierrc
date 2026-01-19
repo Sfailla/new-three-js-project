@@ -1,0 +1,14 @@
+{
+    "plugins": ["prettier-plugin-glsl"],
+    "singleQuote": true,
+    "tabWidth": 4,
+    "trailingComma": "none",
+    "arrowParens": "avoid",
+    "semi": false,
+    "printWidth": 100,
+    "overrides": [
+        {
+            "files": ["*.glsl", "*.frag.glsl", "*.vert.glsl"]
+        }
+    ]
+}

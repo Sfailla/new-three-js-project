@@ -1,0 +1,51 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Vite / build
+.vite/
+dist/
+build/
+/.cache/
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment
+.env
+.env.*
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+/.vscode/
+
+# WebGPU / browser cache / WASM
+*.wasm
+*.mem
+webgpu-cache/
+
+# Editor temp
+*.swp
+*.swo
+
+# Coverage
+coverage/
+
+# Static asset outputs
+static/dist/
+
+# Lockfiles (optional to ignore)
+# package-lock.json
+# yarn.lock
+
