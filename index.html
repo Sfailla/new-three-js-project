@@ -7,6 +7,15 @@
         <title>Three JS Boilerplate</title>
     </head>
     <body>
+        <div id="loading" aria-live="polite">
+            <div class="loading__panel">
+                <div class="loading__title">Loading</div>
+                <div class="loading__bar">
+                    <div class="loading__barFill" style="width: 0%"></div>
+                </div>
+                <div class="loading__text">0%</div>
+            </div>
+        </div>
         <canvas class="webgl"></canvas>
         <script type="module" src="src/main.ts"></script>
     </body>

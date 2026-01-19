@@ -12,6 +12,21 @@
 html,
 body {
     overflow: auto;
+    height: 100%;
+}
+
+body {
+    background: #0b0b10;
+    font-family:
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        Segoe UI,
+        Roboto,
+        Helvetica,
+        Arial,
+        'Apple Color Emoji',
+        'Segoe UI Emoji';
 }
 
 .webgl {
@@ -19,4 +34,60 @@ body {
     top: 0;
     left: 0;
     outline: none;
+    width: 100vw;
+    height: 100vh;
+}
+
+#loading {
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(1200px 800px at 50% 30%, rgba(112, 93, 242, 0.18), transparent 60%),
+        rgba(0, 0, 0, 0.75);
+    color: rgba(255, 255, 255, 0.92);
+    z-index: 10;
+    transition: opacity 250ms ease;
+}
+
+#loading.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.loading__panel {
+    width: min(420px, calc(100vw - 32px));
+    padding: 18px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    background: rgba(15, 15, 22, 0.85);
+    backdrop-filter: blur(10px);
+}
+
+.loading__title {
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+}
+
+.loading__bar {
+    height: 10px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+}
+
+.loading__barFill {
+    height: 100%;
+    width: 0%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #705df2, #7fe7ff);
+    transition: width 120ms linear;
+}
+
+.loading__text {
+    margin-top: 10px;
+    font-size: 12px;
+    opacity: 0.8;
 }
