@@ -1,4 +1,4 @@
-import { Game } from './game/Game'
+import { Game } from './game'
 
 const canvas = document.querySelector('canvas.webgl') as HTMLCanvasElement
 
