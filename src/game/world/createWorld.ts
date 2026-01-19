@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import MeshGridMaterial, { MeshGridMaterialLine } from '../../materials/mesh-grid-material'
+import MeshGridMaterial, { MeshGridMaterialLine } from '../materials/mesh-grid-material'
 
 export type World = {
     dispose: () => void

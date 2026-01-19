@@ -1,12 +1,12 @@
 import type * as THREE from 'three'
 import type { WebGPURenderer } from 'three/webgpu'
-import { createDebug } from '../debug/Debug'
 import { createCamera } from './core/createCamera'
 import { createControls } from './core/createControls'
 import { createRenderer } from './core/createRenderer'
 import { createScene } from './core/createScene'
 import { Sizes } from './core/Sizes'
 import { Time } from './core/Time'
+import { createDebug } from './debug/Debug'
 import { createLoaders } from './loaders/createLoaders'
 import { createWorld } from './world/createWorld'
 
