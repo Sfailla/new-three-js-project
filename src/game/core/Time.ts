@@ -1,4 +1,4 @@
-export type TickCallback = (deltaSeconds: number, elapsedSeconds: number) => void
+export type TickCallback = (deltaSeconds: number, elapsedSeconds: number) => void | Promise<void>
 
 export class Time {
     private tickCallbacks = new Set<TickCallback>()
