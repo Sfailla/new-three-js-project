@@ -23,6 +23,7 @@
         "lil-gui": "^0.21.0",
         "npm": "^11.7.0",
         "simplex-noise": "^4.0.3",
+        "stats-gl": "^3.8.0",
         "three": "^0.182.0",
         "three-perf": "^1.0.11",
         "vite-plugin-glsl": "^1.5.5"
