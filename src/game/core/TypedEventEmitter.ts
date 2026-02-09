@@ -25,7 +25,6 @@ export class TypedEventEmitter<Events extends Record<string, unknown>> {
 
     emit<K extends keyof Events>(eventName: K, payload: Events[K]) {
         const set = this.listeners.get(eventName)
-        console.log({ set })
         if (!set) return
         for (const callback of set) callback(payload)
     }
